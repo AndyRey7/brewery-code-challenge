@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import BeerList from './components/BeerList.js';
+import BreweryList from './components/BreweryList';
+import BreweryDisplay from './components/BreweryDisplay';
 import './App.css';
 
 class App extends Component {
 
     state = {
-        beers: []
+        breweries: [],
+        brewery: {}
     }
 
     componentDidMount() {
@@ -13,15 +15,21 @@ class App extends Component {
         .then(res => res.json())
         .then(data => {
             this.setState({
-                beers: data
+                breweries: data
             })
         })
+    }
+
+    handleShow = (brewery) => {
+        this.setState({brewery
+        }, ()=>console.log(this.state.brewery))
     }
 
   render() {
       return (
         <div>
-            <BeerList beers={this.state.beers}/>
+            <BreweryList breweries={this.state.breweries} handleShow={this.handleShow}/>
+            <BreweryDisplay brewery={this.state.brewery}/>
         </div>
       );
   }

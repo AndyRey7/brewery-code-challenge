@@ -1,0 +1,62 @@
+$forestGreen: #00ae7b;
+
+.brewery-list {
+    max-width: 450px;
+
+    .brewery-title {
+        padding: 25px 35px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    ul {
+        border-bottom: 2px solid #000;
+        .brewery-type {
+            text-transform:capitalize;
+        }
+
+        li {
+            list-style: none;
+        }
+        .btn {
+            padding-top: 10px;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            border: 2px solid $forestGreen;
+            border-radius: 10px;
+            padding: 4px;
+            transition: all .3s ease-in-out;
+            font-size: 15px;
+
+            &:hover {
+                color: $forestGreen;
+            }
+        }
+
+        .more-info {
+            display: inline-block;
+            position: relative;
+            bottom: 29px;
+            left: 139px;
+            font-size: 15px;
+            border: 2px solid $forestGreen;
+            border-radius: 10px;
+            padding: 4px;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: $forestGreen;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+
+//  for command to run sass in terminal: sass --watch brewery-frontend/public/main.scss:brewery-frontend/public/main.css

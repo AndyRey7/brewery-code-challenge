@@ -1,8 +1,41 @@
-h1 {
-    color: red;
-}
+.brewery-list {
+  max-width: 450px; }
+  .brewery-list .brewery-title {
+    padding: 25px 35px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .brewery-list ul {
+    border-bottom: 2px solid #000; }
+    .brewery-list ul .brewery-type {
+      text-transform: capitalize; }
+    .brewery-list ul li {
+      list-style: none; }
+    .brewery-list ul .btn {
+      padding-top: 10px; }
+    .brewery-list ul a {
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+      border: 2px solid #00ae7b;
+      border-radius: 10px;
+      padding: 4px;
+      transition: all .3s ease-in-out;
+      font-size: 15px; }
+      .brewery-list ul a:hover {
+        color: #00ae7b; }
+    .brewery-list ul .more-info {
+      display: inline-block;
+      position: relative;
+      bottom: 29px;
+      left: 139px;
+      font-size: 15px;
+      border: 2px solid #00ae7b;
+      border-radius: 10px;
+      padding: 4px;
+      transition: all .3s ease-in-out; }
+      .brewery-list ul .more-info:hover {
+        color: #00ae7b;
+        cursor: pointer; }
 
-
-li {
-    color: blue;
-}
+/*# sourceMappingURL=main.css.map */
