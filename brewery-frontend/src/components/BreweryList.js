@@ -3,7 +3,6 @@ import Brewery from './Brewery';
 
 export default class BreweryList extends React.Component {
 
-
     beerData = () => {
         return this.props.breweries.map(brewery => <Brewery key={brewery.id} brewery={brewery} handleShow={this.props.handleShow}/>)
     }

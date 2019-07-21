@@ -1,41 +1,54 @@
-.brewery-list {
-  max-width: 450px; }
-  .brewery-list .brewery-title {
-    padding: 25px 35px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .brewery-list ul {
-    border-bottom: 2px solid #000; }
-    .brewery-list ul .brewery-type {
-      text-transform: capitalize; }
-    .brewery-list ul li {
-      list-style: none; }
-    .brewery-list ul .btn {
-      padding-top: 10px; }
-    .brewery-list ul a {
-      display: inline-block;
-      text-decoration: none;
-      color: #000;
-      border: 2px solid #00ae7b;
-      border-radius: 10px;
-      padding: 4px;
-      transition: all .3s ease-in-out;
-      font-size: 15px; }
-      .brewery-list ul a:hover {
-        color: #00ae7b; }
-    .brewery-list ul .more-info {
-      display: inline-block;
-      position: relative;
-      bottom: 29px;
-      left: 139px;
-      font-size: 15px;
-      border: 2px solid #00ae7b;
-      border-radius: 10px;
-      padding: 4px;
-      transition: all .3s ease-in-out; }
-      .brewery-list ul .more-info:hover {
-        color: #00ae7b;
-        cursor: pointer; }
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Lato', sans-serif; }
+  .home .brewery-list {
+    max-width: 500px;
+    overflow-y: scroll;
+    height: 100%; }
+    .home .brewery-list .brewery-title {
+      padding: 25px 35px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .home .brewery-list ul {
+      border-bottom: 2px solid #000; }
+      .home .brewery-list ul .brewery-type {
+        text-transform: capitalize; }
+      .home .brewery-list ul li {
+        list-style: none; }
+      .home .brewery-list ul .btn {
+        padding-top: 10px; }
+      .home .brewery-list ul a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        border: 2px solid #00ae7b;
+        border-radius: 10px;
+        padding: 4px;
+        transition: all .3s ease-in-out;
+        font-size: 15px; }
+        .home .brewery-list ul a:hover {
+          color: #00ae7b; }
+      .home .brewery-list ul .more-info {
+        display: inline-block;
+        position: relative;
+        bottom: 29px;
+        left: 139px;
+        font-size: 15px;
+        border: 2px solid #00ae7b;
+        border-radius: 10px;
+        padding: 4px;
+        transition: all .3s ease-in-out; }
+        .home .brewery-list ul .more-info:hover {
+          color: #00ae7b;
+          cursor: pointer; }
+  .home .brewery-display h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .home .brewery-display .b-map {
+    height: 400px;
+    width: 70%; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,60 +1,80 @@
 $forestGreen: #00ae7b;
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Lato', sans-serif;
 
-.brewery-list {
-    max-width: 450px;
+    .brewery-list {
+        max-width: 500px;
+        overflow-y: scroll;
+        height: 100%;
 
-    .brewery-title {
-        padding: 25px 35px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        text-transform: uppercase;
+        .brewery-title {
+            padding: 25px 35px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        ul {
+            border-bottom: 2px solid #000;
+            .brewery-type {
+                text-transform:capitalize;
+            }
+
+            li {
+                list-style: none;
+            }
+            .btn {
+                padding-top: 10px;
+            }
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: #000;
+                border: 2px solid $forestGreen;
+                border-radius: 10px;
+                padding: 4px;
+                transition: all .3s ease-in-out;
+                font-size: 15px;
+
+                &:hover {
+                    color: $forestGreen;
+                }
+            }
+
+            .more-info {
+                display: inline-block;
+                position: relative;
+                bottom: 29px;
+                left: 139px;
+                font-size: 15px;
+                border: 2px solid $forestGreen;
+                border-radius: 10px;
+                padding: 4px;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    color: $forestGreen;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 
-    ul {
-        border-bottom: 2px solid #000;
-        .brewery-type {
-            text-transform:capitalize;
+    .brewery-display {
+        h1 {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 700;
         }
-
-        li {
-            list-style: none;
-        }
-        .btn {
-            padding-top: 10px;
-        }
-        a {
-            display: inline-block;
-            text-decoration: none;
-            color: #000;
-            border: 2px solid $forestGreen;
-            border-radius: 10px;
-            padding: 4px;
-            transition: all .3s ease-in-out;
-            font-size: 15px;
-
-            &:hover {
-                color: $forestGreen;
-            }
-        }
-
-        .more-info {
-            display: inline-block;
-            position: relative;
-            bottom: 29px;
-            left: 139px;
-            font-size: 15px;
-            border: 2px solid $forestGreen;
-            border-radius: 10px;
-            padding: 4px;
-            transition: all .3s ease-in-out;
-
-            &:hover {
-                color: $forestGreen;
-                cursor: pointer;
-            }
+        .b-map {
+            height: 400px;
+            width: 70%;
         }
     }
 }
+
 
 
 

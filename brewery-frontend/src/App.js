@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BreweryList from './components/BreweryList';
 import BreweryDisplay from './components/BreweryDisplay';
+
 import './App.css';
 
 class App extends Component {
@@ -27,7 +28,7 @@ class App extends Component {
 
   render() {
       return (
-        <div>
+        <div className="home">
             <BreweryList breweries={this.state.breweries} handleShow={this.handleShow}/>
             <BreweryDisplay brewery={this.state.brewery}/>
         </div>
