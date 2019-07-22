@@ -3,13 +3,13 @@ import React from 'react';
 const Brewery = (props) => {
     return (
             <ul>
-                <li>
-                    Name: {props.brewery.name}
+                <li className="b-name">
+                    {props.brewery.name}
                 </li>
                 <li className="brewery-type">
-                    Type: {props.brewery.brewery_type}
+                    Brewery Type: {props.brewery.brewery_type}
                 </li>
-                <li>
+                <li className="b-address">
                 {props.brewery.street} {props.brewery.city}, {props.brewery.state}
                 <br/>{props.brewery.postal_code}
                 </li>

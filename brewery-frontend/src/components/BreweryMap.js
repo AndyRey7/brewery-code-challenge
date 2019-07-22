@@ -18,6 +18,7 @@ class BreweryMap extends Component {
     return (
       <div className="b-map">
         <GoogleMapReact
+        
           defaultCenter={{ lat: -74.36033, lng: 41.335404 }}
           defaultZoom={11}
         >
