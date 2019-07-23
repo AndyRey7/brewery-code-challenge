@@ -12,7 +12,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        fetch('https://api.openbrewerydb.org/breweries?by_state=new_york')
+        fetch('http://localhost:3000/api/v1/brewery')
         .then(res => res.json())
         .then(data => {
             this.setState({

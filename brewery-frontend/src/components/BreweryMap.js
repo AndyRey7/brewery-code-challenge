@@ -4,30 +4,40 @@ import GoogleMapReact from 'google-map-react';
 
 class BreweryMap extends Component {
 
-    static defaultProps = {
-    center: {
-      lat: -74.360033,
-      lng: 41.335404
-    },
-    zoom: 11
-  };
+    state = {
+      map: {},
+      mapsApi: {}
+  }
+
+  // Runs once when the Google Maps library is ready
+  apiHasLoaded = ((map, mapsApi) => {
+    this.setState({
+      map,
+      mapsApi
+    });
+  });
 
 
   render() {
-      console.log('props in brewmap', this.props.brewery);
     return (
-      <div className="b-map">
-        <GoogleMapReact
-        
-          defaultCenter={{ lat: -74.36033, lng: 41.335404 }}
-          defaultZoom={11}
-        >
-        </GoogleMapReact>
-      </div>
-    );
+
+        <section className="b-map">
+
+          <GoogleMapReact
+            bootstrapURLKeys={{
+
+              key: 'AIzaSyACICTQnHpC3uoP3Ah1GdW5MW9LntQt-Ps',
+              libraries: ['places', 'directions']
+            }}
+            defaultZoom={11}
+            defaultCenter={{ lat: -73.456, lng: 40.3454 }}
+            yesIWantToUseGoogleMapApiInternals={true}
+            onGoogleApiLoaded={({ map, maps }) => this.apiHasLoaded(map, maps)} // "maps" is the mapApi.
+          >
+          </GoogleMapReact>
+        </section>
+    )
   }
 }
-
-// defaultCenter={{ lat: parseFloat(this.props.brewery.latitude), lng: parseFloat(this.props.brewery.longitude) }}
 
 export default BreweryMap;
