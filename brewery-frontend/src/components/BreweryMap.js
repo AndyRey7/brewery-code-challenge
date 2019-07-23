@@ -26,7 +26,7 @@ class BreweryMap extends Component {
           <GoogleMapReact
             bootstrapURLKeys={{
 
-              key: 'AIzaSyACICTQnHpC3uoP3Ah1GdW5MW9LntQt-Ps',
+              key: {/*insert key here*/},
               libraries: ['places', 'directions']
             }}
             defaultZoom={11}

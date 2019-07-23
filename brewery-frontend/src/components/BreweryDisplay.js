@@ -3,7 +3,6 @@ import BreweryMap from './BreweryMap';
 
 const BreweryDisplay = (props) => {
 
-    
     return (
         <div className="brewery-display">
             <h1>{props.brewery.name}</h1>
