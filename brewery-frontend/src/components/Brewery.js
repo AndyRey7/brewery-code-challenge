@@ -2,7 +2,7 @@ import React from 'react';
 
 const Brewery = (props) => {
     return (
-            <ul>
+            <ul className="more-info" onClick={() => props.handleShow(props.brewery)}>
                 <li className="b-name">
                     {props.brewery.name}
                 </li>
@@ -16,9 +16,7 @@ const Brewery = (props) => {
                 <div className="btn">
                     <a href={props.brewery.website_url} target="_blank" rel="noopener noreferrer">Brewery Website</a>
                 </div>
-                <div className="more-info" onClick={() => props.handleShow(props.brewery)}>
-                    More Info
-                </div>
+                
             </ul>
     )
 }
