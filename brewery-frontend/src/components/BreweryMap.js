@@ -30,7 +30,7 @@ class BreweryMap extends Component {
               libraries: ['places', 'directions']
             }}
             defaultZoom={11}
-            defaultCenter={{ lat: -73.456, lng: 40.3454 }}
+            defaultCenter={{ lat: -73.456, lng: 40.34545 }}
             yesIWantToUseGoogleMapApiInternals={true}
             onGoogleApiLoaded={({ map, maps }) => this.apiHasLoaded(map, maps)} // "maps" is the mapApi.
           >
