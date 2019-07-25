@@ -75,6 +75,12 @@
   .home .brewery-display .b-map {
     height: 400px;
     width: 80%; }
+  .home .brewery-display .image {
+    display: inline-block;
+    position: relative;
+    left: 150px;
+    height: 200px;
+    width: 200px; }
 
 .brewery-list::-webkit-scrollbar {
   width: 25px; }
