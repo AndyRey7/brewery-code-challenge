@@ -1,11 +1,11 @@
-# brewery-code-challenge
+# Brewery-Code-Challenge
 
 ## Author
 
 * **Andy Reyes** - [AndyRey7](https://github.com/AndyRey7)
 
 ## About
-An app where the user can select from a list of breweries and see more information on the certain brewery that is clicked from the list on the left. This was one using the OpenBreweryDB API and then afterwards I implemented my own fetch API database with Ruby on Rails.
+An app where the user can select from a list of breweries and see more information on the certain brewery that is clicked from the list on the left. At first I used the OpenBreweryDB API to fetch data and then afterwards I implemented my own fetch API database with Ruby on Rails for the optional task.
 
 ## Setup
 
